@@ -22,7 +22,7 @@ pub enum Token {
     Greater,       // >
     GreaterEqual,  // >=
     PlusEquals,    // +=
-    MiunsEquals    // -=
+    MiunsEquals,   // -=
     EqualEqual,    // ==
     NotEqual,      // !=
 

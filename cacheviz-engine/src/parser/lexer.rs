@@ -77,7 +77,7 @@ impl Lexer {
             }
 
             '-' => { 
-                if self.peek() == Some('=') { self.pos += 2; Token::MinusEquals }
+                if self.peek() == Some('=') { self.pos += 2; Token::MiunsEquals }
                 else { self.pos += 1; Token::Minus }}
             ';' => { self.pos += 1; Token::Semicolon }
             '(' => { self.pos += 1; Token::LParen }
@@ -250,7 +250,7 @@ mod tests {
         let tokens = Lexer::new("minus -= 3").tokenize();
         assert_eq!(tokens, vec![
             Token::Identifier("minus".to_string()),
-            Token::MinusEquals,
+            Token::MiunsEquals,
             Token::IntLiteral(3),
             Token::Eof,
         ]);
