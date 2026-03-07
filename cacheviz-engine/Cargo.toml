@@ -1,0 +1,16 @@
+[package]
+name = "cacheviz-engine"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# Web server
+axum = "0.7"
+tokio = { version = "1", features = ["full"] }
+
+# Serialization (for API request/response JSON)
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Error handling
+thiserror = "2"
