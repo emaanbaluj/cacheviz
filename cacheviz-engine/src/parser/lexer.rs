@@ -108,7 +108,6 @@ impl Lexer {
     }
 }
 
-
 // Tests for lexer.rs, run 'cargo test parser' in terminal
 #[cfg(test)]
 mod tests {
@@ -246,7 +245,6 @@ mod tests {
         ]);
     }
 
-
     #[test]
     fn test_minus_equals() {
         let tokens = Lexer::new("minus -= 3").tokenize();
@@ -257,7 +255,4 @@ mod tests {
             Token::Eof,
         ]);
     }
-
-
-
 }
