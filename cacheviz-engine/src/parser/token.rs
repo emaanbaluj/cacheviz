@@ -22,6 +22,9 @@ pub enum Token {
     Greater,       // >
     GreaterEqual,  // >=
     PlusEquals,    // +=
+    MiunsEquals    // -=
+    EqualEqual,    // ==
+    NotEqual,      // !=
 
     // Delimiters
     LParen,    // (
